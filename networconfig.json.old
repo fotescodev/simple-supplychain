@@ -1,0 +1,17 @@
+{
+    "channels": ["public", "importer-exporter", "exporter-bank"],
+    "topology": {
+      "importerOrg": {
+        "channels": ["public", "importer-exporter"],
+        "users": ["user-importer","admin-importer"]
+      },
+      "exporterOrg": {
+        "channels": ["public", "importer-exporter", "exporter-bank"],
+        "users": ["user-exporter", "admin-exporter"]
+      },
+      "bankOrg": {
+        "channels": ["public", "exporter-bank"],
+        "users": ["user-bank", "admin-bank"]
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+{
+  "txTimeout": 300000,
+  "skipInit": true,
+  "controllers": [
+    {
+      "name": "supplychainchaincode-cc",
+      "version": "file:./packages/supplychainchaincode-cc",
+      "controller": "SupplychainchaincodeController"
+    }
+  ]
+}
